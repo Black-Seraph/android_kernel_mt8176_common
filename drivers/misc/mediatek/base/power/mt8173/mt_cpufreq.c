@@ -1197,7 +1197,7 @@ static struct mt_cpu_freq_info opp_tbl_little_e1_4[] = {
 	OP(DVFS_LITTLE_F8, DVFS_LITTLE_V8),
 	OP(DVFS_LITTLE_F9, DVFS_LITTLE_V9),
 };
-#if 0
+
 		      /* big CPU LEVEL 0 *//* 2.1G, SB */
 static struct mt_cpu_freq_info opp_tbl_big_e1_0[] = {
 	OP(DVFS_BIG_SB_F10, DVFS_BIG_SB_V10),
@@ -1233,7 +1233,7 @@ static struct mt_cpu_freq_info opp_tbl_big_e1_2[] = {
 	OP(DVFS_BIG_F10, DVFS_BIG_V10),
 	OP(DVFS_BIG_F11, DVFS_BIG_V11),
 };
-#endif
+
 		      /* big CPU LEVEL 1 *//* 1.8G */
 static struct mt_cpu_freq_info opp_tbl_big_e1_3[] = {
 	OP(DVFS_BIG_F1, DVFS_BIG_V1),
@@ -1272,9 +1272,9 @@ static struct opp_tbl_info opp_tbls_little[] = {
 };
 
 static struct opp_tbl_info opp_tbls_big[] = {
-	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_1)] = {opp_tbl_big_e1_3, ARRAY_SIZE(opp_tbl_big_e1_3)},
-	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_2)] = {opp_tbl_big_e1_3, ARRAY_SIZE(opp_tbl_big_e1_3)},
-	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_3)] = {opp_tbl_big_e1_3, ARRAY_SIZE(opp_tbl_big_e1_3)},
+	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_1)] = {opp_tbl_big_e1_0, ARRAY_SIZE(opp_tbl_big_e1_0)},
+	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_2)] = {opp_tbl_big_e1_1, ARRAY_SIZE(opp_tbl_big_e1_1)},
+	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_3)] = {opp_tbl_big_e1_2, ARRAY_SIZE(opp_tbl_big_e1_2},
 	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_4)] = {opp_tbl_big_e1_3, ARRAY_SIZE(opp_tbl_big_e1_3)},
 	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_5)] = {opp_tbl_big_e1_4, ARRAY_SIZE(opp_tbl_big_e1_4)},
 };
