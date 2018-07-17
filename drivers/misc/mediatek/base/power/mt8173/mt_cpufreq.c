@@ -1274,7 +1274,7 @@ static struct opp_tbl_info opp_tbls_little[] = {
 static struct opp_tbl_info opp_tbls_big[] = {
 	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_1)] = {opp_tbl_big_e1_0, ARRAY_SIZE(opp_tbl_big_e1_0)},
 	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_2)] = {opp_tbl_big_e1_1, ARRAY_SIZE(opp_tbl_big_e1_1)},
-	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_3)] = {opp_tbl_big_e1_2, ARRAY_SIZE(opp_tbl_big_e1_2},
+	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_3)] = {opp_tbl_big_e1_2, ARRAY_SIZE(opp_tbl_big_e1_2)},
 	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_4)] = {opp_tbl_big_e1_3, ARRAY_SIZE(opp_tbl_big_e1_3)},
 	[CPU_LV_TO_OPP_IDX(CPU_LEVEL_5)] = {opp_tbl_big_e1_4, ARRAY_SIZE(opp_tbl_big_e1_4)},
 };
