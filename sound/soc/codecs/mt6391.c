@@ -1584,16 +1584,24 @@ static int mt6391_headset_speaker_amp_set(struct snd_kcontrol *kcontrol,
 		mt6391_check_and_turn_off_all_amps(codec_data);
 		mt6391_ana_clk_on(codec_data);
 		mt6391_turn_on_headset_speaker_amp(codec_data);
+		// mt6391_turn_on_headphone_amp(codec_data);
 		codec_data->device_power[MT6391_DEV_OUT_SPEAKER_HEADSET_L] = true;
+		#ifdef USE_EXT_AMP
+		gpio_direction_output(gpio_spk_en, 1);
+		udelay(2);
+		gpio_direction_output(gpio_spk_en, 0);
+		udelay(2);
+		gpio_direction_output(gpio_spk_en, 1);
+		#endif
 	} else if (!ucontrol->value.integer.value[0] &&
 		   codec_data->device_power[MT6391_DEV_OUT_SPEAKER_HEADSET_L]) {
 		codec_data->device_power[MT6391_DEV_OUT_SPEAKER_HEADSET_L] = false;
 		mt6391_turn_off_headset_speaker_amp(codec_data);
+		// mt6391_turn_off_headphone_amp(codec_data);
 		mt6391_ana_clk_off(codec_data);
-	}
-
-	mutex_unlock(&codec_data->ctrl_mutex);
-	return 0;
+		#ifdef USE_EXT_AMP
+		gpio_direction_output(gpio_spk_en, 0);
+		#endif
 }
 
 static int mt6391_headset_pgal_get(struct snd_kcontrol *kcontrol,

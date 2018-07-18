@@ -781,7 +781,7 @@ static inline void check_cable_type(void)
 			mutex_lock(&accdet_eint_irq_sync_mutex);
 			if (1 == eint_accdet_sync_flag) {
 				accdet_status = MIC_BIAS;
-				cable_type = HEADSET_MIC;
+				cable_type = HEADSET_NO_MIC;
 			} else {
 				ACCDET_DEBUG("[Accdet] Headset has plugged out\n");
 			}
@@ -908,7 +908,7 @@ static inline void check_cable_type(void)
 			mutex_lock(&accdet_eint_irq_sync_mutex);
 			if (1 == eint_accdet_sync_flag) {
 				accdet_status = MIC_BIAS;
-				cable_type = HEADSET_MIC;
+				cable_type = HEADSET_NO_MIC;
 				ACCDET_DEBUG("[Accdet]MIC_BIAS state not change!\n");
 			} else {
 				ACCDET_DEBUG("[Accdet] Headset has plugged out\n");
