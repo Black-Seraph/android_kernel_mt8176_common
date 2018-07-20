@@ -1602,6 +1602,9 @@ static int mt6391_headset_speaker_amp_set(struct snd_kcontrol *kcontrol,
 		#ifdef USE_EXT_AMP
 		gpio_direction_output(gpio_spk_en, 0);
 		#endif
+	}
+
+	return 0;
 }
 
 static int mt6391_headset_pgal_get(struct snd_kcontrol *kcontrol,
