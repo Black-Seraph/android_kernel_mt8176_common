@@ -240,7 +240,9 @@ static void gpio_init(struct kp *kp, struct device_node *np)
 static void read_keys_value(struct kp *kp)
 {
 	int i;
-//	int tmp = 0;
+#if SELFTEST
+	int tmp = 0;
+#endif
 
 	if (kp->suspend_flag) {
 		for (i=0; i<kp->keynum; i++)
