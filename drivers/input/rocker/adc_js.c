@@ -39,7 +39,7 @@
 #define CENTER_TRY	5
 #define VERTICAL	1
 #define HOT		0
-#define SELFTEST	0
+#define SELFTEST	1
 
 
 #define TRACKING_ID	20
