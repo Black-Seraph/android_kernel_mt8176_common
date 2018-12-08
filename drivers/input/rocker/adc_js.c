@@ -572,7 +572,7 @@ static void test_stick(void)
 	else
 		sticktest = 0;
 }
-/*
+
 static ssize_t selftest_sys_read(struct device *dev, struct device_attribute *attr, char *buf)
 {
 	int count = 0;
@@ -587,10 +587,10 @@ static ssize_t selftest_sys_read(struct device *dev, struct device_attribute *at
 
 	return count;
 }
-static DEVICE_ATTR(selftest, S_IRWXUGO, selftest_sys_read, NULL);
-*/
+static DEVICE_ATTR(selftest, 0444, selftest_sys_read, NULL);
+
 #endif
-/*
+
 static ssize_t mode_show(struct device *dev, struct device_attribute *attr, char *buf)
 {
 	int count = 0;
@@ -604,12 +604,12 @@ static ssize_t mode_store(struct device *dev, struct device_attribute *attr, con
 	printk("--- ioctl_xbox = %d ---\n", ioctl_xbox);
 	return count;
 }
-static DEVICE_ATTR(mode, S_IRWXUGO, mode_show, mode_store);
-*/
+static DEVICE_ATTR(mode, 0666, mode_show, mode_store);
+
 static struct attribute *key_attr[] = {
-//	&dev_attr_mode.attr,
+	&dev_attr_mode.attr,
 #if SELFTEST
-//	&dev_attr_selftest.attr,
+	&dev_attr_selftest.attr,
 #endif
 	NULL
 };
