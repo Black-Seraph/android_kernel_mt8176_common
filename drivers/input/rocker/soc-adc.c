@@ -146,10 +146,10 @@ static int joystick_probe(struct i2c_client *client ,const struct i2c_device_id 
 	struct joystick_ts_data *joystick_ts;
 	struct device_node *np = client->dev.of_node;
 
-	unsigned long irq_flags;
+	unsigned long irq_flags = 0;
 	int err = 0;
 	int ret = 0;
-	int irq_pin;
+	int irq_pin = 0;
 
 printk("%s %d\n",__func__,__LINE__);
 //irq_pin = of_get_named_gpio(np, "irq-gpio", 0);
