@@ -1562,7 +1562,8 @@ static int wlanStop(struct net_device *prDev)
 /*----------------------------------------------------------------------------*/
 VOID wlanUpdateChannelTable(P_GLUE_INFO_T prGlueInfo)
 {
-	UINT_8 i, j;
+	//UINT_8 i, j;
+	UINT_8 i;
 	UINT_8 ucNumOfChannel;
 	RF_CHANNEL_INFO_T aucChannelList[ARRAY_SIZE(mtk_2ghz_channels) + ARRAY_SIZE(mtk_5ghz_channels)];
 
@@ -1584,6 +1585,7 @@ VOID wlanUpdateChannelTable(P_GLUE_INFO_T prGlueInfo)
 			     &ucNumOfChannel, aucChannelList);
 
 	/* 3. Enable specific channel based on domain channel list */
+	/*
 	for (i = 0; i < ucNumOfChannel; i++) {
 		switch (aucChannelList[i].eBand) {
 		case BAND_2G4:
@@ -1610,6 +1612,18 @@ VOID wlanUpdateChannelTable(P_GLUE_INFO_T prGlueInfo)
 			DBGLOG(INIT, WARN, "Unknown band %d\n", aucChannelList[i].eBand);
 			break;
 		}
+	}
+	*/
+
+	/* 4. Fuck this, give us all channels! */
+	for (i = 0; i < ARRAY_SIZE(mtk_2ghz_channels); i++) {
+		mtk_2ghz_channels[i].flags &= ~IEEE80211_CHAN_DISABLED;
+		mtk_2ghz_channels[i].orig_flags &= ~IEEE80211_CHAN_DISABLED;
+	}       
+
+	for (i = 0; i < ARRAY_SIZE(mtk_5ghz_channels); i++) {
+		mtk_5ghz_channels[i].flags &= ~IEEE80211_CHAN_DISABLED;
+		mtk_5ghz_channels[i].orig_flags &= ~IEEE80211_CHAN_DISABLED;
 	}
 }
 
