@@ -1186,6 +1186,7 @@ static DRIVER_ATTR(accdet_call_state, 0664, NULL, accdet_store_call_state);
 static int g_start_debug_thread;
 static struct task_struct *thread;
 static int g_dump_register;
+static int g_headset_mode;
 static int dbug_thread(void *unused)
 {
 	while (g_start_debug_thread) {
@@ -1235,6 +1236,16 @@ static ssize_t store_accdet_set_headset_mode(struct device_driver *ddri, const c
 		return -EINVAL;
 	}
 
+	if (g_headset_mode != value) {
+		// Flip the headphone jack detection IRQ polarity
+		if (accdet_eint_type == IRQ_TYPE_LEVEL_HIGH)
+			accdet_eint_type = IRQ_TYPE_LEVEL_LOW;
+		else
+			accdet_eint_type = IRQ_TYPE_LEVEL_HIGH;
+		g_headset_mode = value;
+		accdet_eint_func(0, NULL);
+	}
+
 	ACCDET_DEBUG("[Accdet]store_accdet_set_headset_mode value =%d\n", value);
 
 	return count;
@@ -1261,7 +1272,7 @@ static ssize_t store_accdet_dump_register(struct device_driver *ddri, const char
 /*----------------------------------------------------------------------------*/
 static DRIVER_ATTR(dump_register, S_IWUSR | S_IRUGO, NULL, store_accdet_dump_register);
 
-static DRIVER_ATTR(set_headset_mode, S_IWUSR | S_IRUGO, NULL, store_accdet_set_headset_mode);
+static DRIVER_ATTR(set_headset_mode, 0666 /*S_IWUSR | S_IRUGO*/, NULL, store_accdet_set_headset_mode);
 
 static DRIVER_ATTR(start_debug, S_IWUSR | S_IRUGO, NULL, store_accdet_start_debug_thread);
 
