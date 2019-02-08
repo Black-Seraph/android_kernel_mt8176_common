@@ -179,379 +179,252 @@ DOMAIN_INFO_ENTRY arSupportedRegDomains[] = {
 	{
 	 (PUINT_16) g_u2CountryGroup0, sizeof(g_u2CountryGroup0) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_LOW_NA */
-	  {118, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_MID_NA */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
-	  {125, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_NA */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup1, sizeof(g_u2CountryGroup1) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 11, FALSE}
-	  ,			/* CH_SET_2G4_1_11 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_144 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup2, sizeof(g_u2CountryGroup2) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_144 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup3, sizeof(g_u2CountryGroup3) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_144 */
-	  {125, BAND_5G, CHNL_SPAN_20, 149, 4, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_161 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup4, sizeof(g_u2CountryGroup4) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_144 */
-	  {125, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_NA */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup5, sizeof(g_u2CountryGroup5) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 11, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_140 */
-	  {125, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_NA */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup6, sizeof(g_u2CountryGroup6) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE}
-	  ,			/* CH_SET_2G4_14_14 */
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 11, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_140 */
-	  {125, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_NA */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup7, sizeof(g_u2CountryGroup7) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
-	  {125, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_NA */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup8, sizeof(g_u2CountryGroup8) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
-	  {125, BAND_5G, CHNL_SPAN_20, 149, 4, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_161 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup9, sizeof(g_u2CountryGroup9) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_MID_NA */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
-	  {125, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_NA */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup10, sizeof(g_u2CountryGroup10) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup11, sizeof(g_u2CountryGroup11) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_MID_NA */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup12, sizeof(g_u2CountryGroup12) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_LOW_NA */
-	  {118, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_MID_NA */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup13, sizeof(g_u2CountryGroup13) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_LOW_NA */
-	  {118, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_MID_NA */
-	  {121, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_WW_NA */
-	  {125, BAND_5G, CHNL_SPAN_20, 149, 4, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_161 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup14, sizeof(g_u2CountryGroup14) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 8, FALSE}
-	  ,			/* CH_SET_UNII_WW_100_128 */
-	  {125, BAND_5G, CHNL_SPAN_20, 149, 4, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_161 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
+	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup15, sizeof(g_u2CountryGroup15) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_NULL, 0, 0, 0, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 11, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_140 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup16, sizeof(g_u2CountryGroup16) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 11, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_140 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup17, sizeof(g_u2CountryGroup17) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 11, FALSE}
-	  ,			/* CH_SET_2G4_1_11 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 11, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_140 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup18, sizeof(g_u2CountryGroup18) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 11, FALSE}
-	  ,			/* CH_SET_2G4_1_11 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 11, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_140 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup19, sizeof(g_u2CountryGroup19) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 11, FALSE}
-	  ,			/* CH_SET_2G4_1_11 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 5, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_116 */
-	  {121, BAND_5G, CHNL_SPAN_20, 132, 4, TRUE}
-	  ,			/* CH_SET_UNII_WW_132_144 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-				/* CH_SET_UNII_UPPER_149_165 */
 	 }
 	}
 	,
 	{
 	 (PUINT_16) g_u2CountryGroup20, sizeof(g_u2CountryGroup20) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_144 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 	,
@@ -559,18 +432,12 @@ DOMAIN_INFO_ENTRY arSupportedRegDomains[] = {
 	 /* Note: Default group if no matched country code */
 	 (PUINT_16) g_u2CountryGroup21, sizeof(g_u2CountryGroup21) / 2,
 	 {
-	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE}
-	  ,			/* CH_SET_2G4_1_13 */
-
-	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE}
-	  ,			/* CH_SET_UNII_LOW_36_48 */
-	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, TRUE}
-	  ,			/* CH_SET_UNII_MID_52_64 */
-	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, TRUE}
-	  ,			/* CH_SET_UNII_WW_100_144 */
+	  {81, BAND_2G4, CHNL_SPAN_5, 1, 13, FALSE},
+	  {82, BAND_2G4, CHNL_SPAN_5, 14, 1, FALSE},
+	  {115, BAND_5G, CHNL_SPAN_20, 36, 4, FALSE},
+	  {118, BAND_5G, CHNL_SPAN_20, 52, 4, FALSE},
+	  {121, BAND_5G, CHNL_SPAN_20, 100, 12, FALSE},
 	  {125, BAND_5G, CHNL_SPAN_20, 149, 5, FALSE}
-	  ,			/* CH_SET_UNII_UPPER_149_165 */
-	  {0, BAND_NULL, 0, 0, 0, FALSE}
 	 }
 	}
 };
