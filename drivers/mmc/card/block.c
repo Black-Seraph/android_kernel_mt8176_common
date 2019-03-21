@@ -3597,11 +3597,12 @@ static const struct mmc_fixup blk_fixups[] = {
 	MMC_FIXUP("FJ25AB", CID_MANFID_SAMSUNG, 0x100, add_quirk_mmc,
 		  MMC_QUIRK_DISABLE_CACHE),
 #endif
-	MMC_FIXUP("SEM16G", CID_MANFID_SANDISK_EMMC, CID_OEMID_ANY, add_quirk_mmc,
-		  MMC_QUIRK_DISABLE_SNO),
-	MMC_FIXUP("SEM08G", CID_MANFID_SANDISK_EMMC, CID_OEMID_ANY, add_quirk_mmc,
-		  MMC_QUIRK_DISABLE_SNO),
-
+	 /*
+	 * Skelton: Let's see if we can add new EMMC for Sandisk clones that use some devices (damn GPD), not getting proper name and emmc detection
+	 */
+	 
+	MMC_FIXUP(CID_NAME_ANY, CID_MANFID_SANDISK_EMMC, CID_OEMID_ANY, add_quirk_mmc,
+		MMC_QUIRK_DISABLE_SNO),
 	END_FIXUP
 };
 
