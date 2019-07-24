@@ -2200,12 +2200,13 @@ static void binder_transaction_buffer_release(struct binder_proc *proc,
 			break;
 		case BINDER_TYPE_HANDLE:
 		case BINDER_TYPE_WEAK_HANDLE:{
-				struct binder_ref *ref = binder_get_ref(proc, fp->handle,
-							fp->type == BINDER_TYPE_HANDLE);
+				struct binder_ref *ref;
+
+				ref = binder_get_ref(proc, fp->handle,
+						fp->type == BINDER_TYPE_HANDLE);
 
 				if (ref == NULL) {
-					pr_err
-					    ("transaction release %d bad handle %d\n",
+					pr_err("transaction release %d bad handle %d\n",
 					     debug_id, fp->handle);
 					break;
 				}
@@ -2723,7 +2724,9 @@ static void binder_transaction(struct binder_proc *proc,
 			break;
 		case BINDER_TYPE_HANDLE:
 		case BINDER_TYPE_WEAK_HANDLE:{
-				struct binder_ref *ref = binder_get_ref(proc, fp->handle,
+				struct binder_ref *ref;
+
+				ref = binder_get_ref(proc, fp->handle,
 							fp->type == BINDER_TYPE_HANDLE);
 
 				if (ref == NULL) {
