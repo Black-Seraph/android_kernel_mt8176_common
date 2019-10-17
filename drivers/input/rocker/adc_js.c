@@ -606,11 +606,27 @@ static ssize_t mode_store(struct device *dev, struct device_attribute *attr, con
 }
 static DEVICE_ATTR(mode, 0666, mode_show, mode_store);
 
+static ssize_t key_show(struct device *dev, struct device_attribute *attr, char *buf)
+{
+	int count = 0;
+	count += sprintf(buf, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", key_param[0], key_param[1], key_param[2], key_param[3], key_param[4], key_param[5], key_param[6], key_param[7], key_param[8], key_param[9], key_param[10], key_param[11], key_param[12], key_param[13], key_param[14], key_param[15], key_param[16], key_param[17], key_param[18], key_param[19], key_param[20], key_param[21], key_param[22], key_param[23], key_param[24], key_param[25], key_param[26], key_param[27], key_param[28], key_param[29], key_param[30], key_param[31], key_param[32], key_param[33], key_param[34], key_param[35], key_param[36], key_param[37], key_param[38]);
+	return count;
+}
+
+static ssize_t key_store(struct device *dev, struct device_attribute *attr, const char *buf, size_t count)
+{
+	sscanf(buf, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d", &key_param[0], &key_param[1], &key_param[2], &key_param[3], &key_param[4], &key_param[5], &key_param[6], &key_param[7], &key_param[8], &key_param[9], &key_param[10], &key_param[11], &key_param[12], &key_param[13], &key_param[14], &key_param[15], &key_param[16], &key_param[17], &key_param[18], &key_param[19], &key_param[20], &key_param[21], &key_param[22], &key_param[23], &key_param[24], &key_param[25], &key_param[26], &key_param[27], &key_param[28], &key_param[29], &key_param[30], &key_param[31], &key_param[32], &key_param[33], &key_param[34], &key_param[35], &key_param[36], &key_param[37], &key_param[38]);
+	printk("--- key_param = %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d ---\n", key_param[0], key_param[1], key_param[2], key_param[3], key_param[4], key_param[5], key_param[6], key_param[7], key_param[8], key_param[9], key_param[10], key_param[11], key_param[12], key_param[13], key_param[14], key_param[15], key_param[16], key_param[17], key_param[18], key_param[19], key_param[20], key_param[21], key_param[22], key_param[23], key_param[24], key_param[25], key_param[26], key_param[27], key_param[28], key_param[29], key_param[30], key_param[31], key_param[32], key_param[33], key_param[34], key_param[35], key_param[36], key_param[37], key_param[38]);
+	return count;
+}
+static DEVICE_ATTR(key, 0666, key_show, key_store);
+
 static struct attribute *key_attr[] = {
 	&dev_attr_mode.attr,
 #if SELFTEST
 	&dev_attr_selftest.attr,
 #endif
+	&dev_attr_key.attr,
 	NULL
 };
 
