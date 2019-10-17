@@ -102,7 +102,7 @@ static struct timer_list r_hdmi_timer;
 static struct timer_list r_cec_timer;
 unsigned char hdmi2_debug = 0;
 unsigned char hdmi_dpi_output = 0;
-unsigned char hdmi2_force_output = 0;
+unsigned char hdmi2_force_output = 2;
 unsigned int hdmistate_debug = 1;
 
 static bool factory_boot_mode;
@@ -1234,10 +1234,10 @@ void vReadHdcpVersion(void)
 		HDMI_PLUG_LOG("sink support hdcp1.x version\n");
 	}
 
-/*	if (hdmi2_force_output == 1)
+	if (hdmi2_force_output == 1)
 		hdcp2_version_flag = TRUE;
 	else if (hdmi2_force_output == 2)
-		hdcp2_version_flag = FALSE; */
+		hdcp2_version_flag = FALSE;
 
 	hdmi_hdcp_version = get_devinfo_with_index(HDMI_HDCP_VERSION_INDEX);
 	if ((hdmi_hdcp_version & 0x40) && (hdcp2_version_flag == TRUE)) {
@@ -1914,12 +1914,12 @@ void hdmi_irq_impl(void)
 			HDMI_PLUG_LOG("sink support hdcp1.x version\n");
 		}
 		/* force hdmi2 */
-	/*	if (hdmi2_force_output == 1)
-			hdcp2_version_flag = TRUE; */
+		if (hdmi2_force_output == 1)
+			hdcp2_version_flag = TRUE;
 
 		/* force hdmi1 */
-/*		else if (hdmi2_force_output == 2)
-			hdcp2_version_flag = FALSE;	*/
+		else if (hdmi2_force_output == 2)
+			hdcp2_version_flag = FALSE;
 
 		/* u4data = *((unsigned int *)(DISP_CONFIG2_BASE + 0x44)); */
 		hdmi_hdcp_version = get_devinfo_with_index(HDMI_HDCP_VERSION_INDEX);
